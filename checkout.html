@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="checkout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="images/amazon-logo-dark.png" class="logo" alt="" />
+      </div>
+      <div class="checkout-items-container">
+        <span class="checkout-items"
+          >Checkout(<span class="checkout-items-count">0 items</span>)</span
+        >
+      </div>
+      <div class="checkout-lock-container">
+        <img src="images/icons/checkout-lock-icon.png" alt="" />
+      </div>
+    </header>
+
+    <main>
+      <span class="review-text">Review your order </span>
+    </main>
+  </body>
+  <script>
+    // fetch("products.json")
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     let localStorageFile = JSON.parse(localStorage.getItem("amazon-cart"));
+    //     localStorageFile.forEach((id) => {
+    //       data.forEach((product) => {
+    //         if (id === product.id) {
+    //           document.write(`<img src="${product.image}"/>`);
+    //         }
+    //       });
+    //     });
+    //   });
+  </script>
+</html>

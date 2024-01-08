@@ -9,207 +9,76 @@ body {
   height: 100vh;
 }
 
-header {
-  background-color: #131921;
-  height: 60px;
-  min-width: 1000px;
+main {
   display: flex;
-  align-items: center;
-  padding-inline: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px;
+  padding-top: 60px;
 }
 
-.logo-container {
-  height: 90%;
-  border: 1px solid transparent;
-  border-radius: 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-inline: 5px;
-}
-
-.logo-container:hover {
-  border: 1px solid #fff;
-}
-
-.logo-container .logo {
-  height: 50%;
-}
-
-.delivery-address {
-  margin-left: 10px;
-  display: flex;
-  align-items: center;
-  min-width: 80px;
-  height: 90%;
-  border: 1px solid transparent;
-  border-radius: 2px;
-  padding-inline: 2px;
-}
-
-.delivery-address:hover {
-  border: 1px solid #fff;
-}
-
-.delivery-address img {
-  height: 20px;
-  margin-bottom: 4px;
-}
-
-.delivery-address .delivery-address-details {
+.product-container {
+  max-height: 500px;
+  width: 220px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
 }
 
-.delivery-address .delivery-address-details span {
-  color: #fff;
-  font-weight: lighter;
-  font-size: 0.75rem;
-}
-
-.delivery-address .delivery-address-details .delivery-address-country {
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.search-container {
-  margin-left: 15px;
-  height: 40px;
-  display: flex;
-  border-radius: 4px;
-  overflow: hidden;
-  border: 2px solid transparent;
-  flex: 1;
-  min-width: 300px;
-  max-width: 400px;
-}
-
-.search-container .search-bar-catergory {
-  color: #000;
-  background-color: #d4d4d4;
-  width: 40px;
+.product-container .image-container {
+  height: 200px;
+  width: 220px;
+  margin-bottom: 20px;
   display: grid;
   place-items: center;
-  border: none;
+  overflow: hidden;
 }
 
-.search-container .search-bar {
-  border: none;
-  flex: 1;
+.image-container .product-image {
+  max-height: 200px;
+  max-width: 100%;
 }
 
-.search-container .search-button {
-  width: 40px;
-  border: none;
-  background-color: #febd69;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.search-container .search-button img {
-  height: 45%;
-}
-.search-container:focus-within {
-  border: 2px solid #ff9900;
-  outline: none;
-}
-.search-bar:focus {
-  outline: none;
-}
-
-.language-container {
-  margin-left: 10px;
-  padding-bottom: 10px;
-  padding-inline: 5px;
-  display: flex;
-  align-items: flex-end;
-  border-radius: 2px;
-  border: 1px solid transparent;
-  height: 90%;
-}
-
-.language-container:hover {
-  border: 1px solid #fff;
-}
-
-.language-container img {
-  height: 18px;
-}
-
-.language-container .language {
-  color: #fff;
-  font-weight: bold;
-  font-size: 1rem;
-  margin-left: 5px;
-}
-
-.user-container,
-.order-container {
-  display: flex;
-  flex-direction: column;
-  margin-left: 10px;
-  border: 1px solid transparent;
-  border-radius: 2px;
-  height: 90%;
-  display: flex;
-  justify-content: center;
-  padding-inline: 5px;
-  min-width: 130px;
-}
-
-.order-container {
-  min-width: 70px;
-}
-
-.user-container:hover,
-.order-container:hover {
-  border: 1px solid #fff;
-}
-
-.user-container span,
-.order-container span {
-  color: #fff;
-  font-size: 0.75rem;
-}
-.user-container .bold,
-.order-container .bold {
-  font-weight: bold;
+.product-container .product-name {
+  height: 40px;
   font-size: 0.9rem;
+  margin-bottom: 10px;
 }
 
-.cart-container {
-  margin-left: 10px;
-  position: relative;
+.rating-container {
   display: flex;
   align-items: center;
-  border-radius: 2px;
-  border: 1px solid transparent;
-  height: 90%;
-  padding-inline: 5px;
+  gap: 10px;
+  align-self: flex-start;
+  margin-bottom: 10px;
 }
 
-.cart-container:hover {
-  border: 1px solid #fff;
+.rating-container .rating {
+  width: 55%;
 }
 
-.cart-container img {
-  height: 25px;
+.rating-container .rate-count {
+  color: #000;
+  margin-top: 5px;
 }
 
-.cart-container .cart-count {
-  height: 25px;
-  color: #f08804;
+.product-container .product-price {
+  align-self: flex-start;
+  margin-bottom: 10px;
   font-weight: bold;
-  font-size: 1rem;
-  position: absolute;
-  top: 10px;
-  left: 25px;
 }
 
-.cart-container .bold {
-  color: #fff;
-  font-weight: bold;
-  font-size: 0.9rem;
-  margin-left: 5px;
-  margin-top: 10px;
+.product-container button {
+  border: none;
+  padding-block: 10px;
+  width: 100%;
+  border-radius: 100px;
+  background-color: #ffd814;
+  cursor: pointer;
+}
+
+.product-container button:hover {
+  background-color: rgb(230, 194, 18);
 }

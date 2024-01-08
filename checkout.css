@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+header {
+  background-color: #fff;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-inline: 30px;
+  position: relative;
+}
+
+.logo-container {
+  height: 90%;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 5px;
+  overflow: hidden;
+}
+
+.logo-container .logo {
+  height: 130px;
+  background-color: #fff;
+}
+
+.checkout-items-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.checkout-items {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.checkout-items-count {
+  color: #007185;
+}
+
+.checkout-lock-container {
+  width: 100px;
+  display: flex;
+  justify-content: end;
+}
+
+main {
+  padding-inline: 100px;
+}
+
+.review-text {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
