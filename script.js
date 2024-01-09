@@ -1,6 +1,5 @@
 const main = document.querySelector("main");
 let localStorageFile = JSON.parse(localStorage.getItem("amazon-cart")) || [];
-
 const cartCountElement = document.querySelector(".cart-count");
 let cartCount = 0;
 localStorageFile.forEach((item) => {
@@ -40,17 +39,15 @@ async function fetchProducts() {
           if (item.id == button.id) {
             let index = localStorageFile.indexOf(item);
             count = item.count + 1;
-            cartCount += 1;
-            cartCountElement.innerHTML = cartCount;
             localStorageFile.splice(index, 1);
           }
         });
 
+        cartCount += 1;
+        cartCountElement.innerHTML = cartCount;
         localStorageFile.push({ id: button.id, count });
         localStorage.setItem("amazon-cart", JSON.stringify(localStorageFile));
-        console.log(JSON.parse(localStorage.getItem("amazon-cart")));
       });
-      // localStorage.removeItem("amazon-cart");
     });
   } catch (error) {
     console.error("Error fetching the products:", error);
@@ -58,3 +55,8 @@ async function fetchProducts() {
 }
 
 document.addEventListener("DOMContentLoaded", fetchProducts);
+
+const cartContiner = document.querySelector(".cart-container");
+cartContiner.addEventListener("click", () => {
+  window.location.href = "checkout.html";
+});

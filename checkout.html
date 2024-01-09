@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
+    <script src="checkout.js" defer></script>
     <title>Checkout</title>
   </head>
   <body>
@@ -29,20 +30,83 @@
 
     <main>
       <span class="review-text">Review your order </span>
+      <div class="order-container">
+        <section class="order-list-container">
+          <!-- <p>Your cart is empty.</p>
+          <p>View products</p> -->
+          <!-- <span class="delivery-date"
+            >Delivery date: Thursday, January 18
+          </span>
+          <section class="product-details-container">
+            <div class="image-container">
+              <img
+                src="images/products/athletic-cotton-socks-6-pairs.jpg"
+                alt=""
+                class="product-image"
+              />
+            </div>
+            <div class="product-details">
+              <span class="product-name">
+                Adults Plain Cotton T-Shirt - 2 Pack
+              </span>
+              <span class="product-price">$7.99</span>
+              <span class="product-quantity">Quantity: 1 Update Delete</span>
+            </div>
+            <div class="delivery-details">
+              <span class="delivery-option-title">
+                Choose a delivery option:
+              </span>
+              <div class="delivery-options">
+                <input type="radio" name="" id="" />
+                <div class="delivery-option-details">
+                  <p>Thursday, January 18</p>
+                  <p>FREE Shipping</p>
+                </div>
+              </div>
+              <div class="delivery-options">
+                <input type="radio" name="" id="" />
+                <div class="delivery-option-details">
+                  <p>Thursday, January 18</p>
+                  <p>FREE Shipping</p>
+                </div>
+              </div>
+              <div class="delivery-options">
+                <input type="radio" name="" id="" />
+                <div class="delivery-option-details">
+                  <p>Thursday, January 18</p>
+                  <p>FREE Shipping</p>
+                </div>
+              </div>
+            </div>
+          </section> -->
+        </section>
+        <section class="payment-summary">
+          <div class="order-summary">
+            <span class="order-summary-title">Order Summary</span>
+            <div class="order-summary-row">
+              <span>Items (0):</span>
+              <span>$0.00</span>
+            </div>
+            <div class="order-summary-row">
+              <span>Shipping & handling:</span>
+              <span>$0.00</span>
+            </div>
+            <div class="order-summary-row">
+              <span class="total-before-tax-title">Total before tax:</span>
+              <span class="total-before-tax">$0.00</span>
+            </div>
+            <div class="order-summary-row">
+              <span>Estimated tax (10%):</span>
+              <span>$0.00</span>
+            </div>
+          </div>
+          <div class="order-total">
+            <span class="order-total-title">Order total: </span>
+            <span>$0.00</span>
+          </div>
+          <button class="place-order-button">Place your order</button>
+        </section>
+      </div>
     </main>
   </body>
-  <script>
-    // fetch("products.json")
-    //   .then((res) => res.json())
-    //   .then((data) => {
-    //     let localStorageFile = JSON.parse(localStorage.getItem("amazon-cart"));
-    //     localStorageFile.forEach((id) => {
-    //       data.forEach((product) => {
-    //         if (id === product.id) {
-    //           document.write(`<img src="${product.image}"/>`);
-    //         }
-    //       });
-    //     });
-    //   });
-  </script>
 </html>
