@@ -70,6 +70,28 @@ main {
   font-weight: bold;
 }
 
+.product-quantity-container {
+  margin-bottom: 20px;
+  width: 100%;
+  padding-block: 10px;
+}
+
+.quantity-selector {
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(213, 217, 217);
+  border-radius: 8px;
+  padding: 3px 5px;
+  color: rgb(33, 33, 33);
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+
+.quantity-selector:focus,
+.quantity-selector:active {
+  outline: 2px solid #febd69;
+}
+
 .product-container button {
   border: none;
   padding-block: 10px;

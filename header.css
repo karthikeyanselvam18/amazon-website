@@ -51,6 +51,7 @@ header {
 .search-container .search-bar {
   border: none;
   flex: 1;
+  padding-left: 10px;
 }
 
 .search-container .search-button {
